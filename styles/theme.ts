@@ -4,29 +4,41 @@ export default {
   spacing: 24,
   defaultMode: "light",
   global: {
+    breakpoints: {
+      xsmall: {
+        value: 500,
+      },
+      small: {
+        value: 900,
+      },
+      medium: undefined,
+      middle: {
+        value: 2000,
+      },
+    },
     colors: {
       brand: {
         dark: "#FFC507",
         light: "#FFC507",
       },
       background: {
-        dark: "#111111",
+        dark: "#0E0E0E",
         light: "#FFFFFF",
       },
-      "background-back": {
-        dark: "#111111",
-        light: "#EEEEEE",
+      "background-card": {
+        dark: "#1C1C1C",
+        light: "#d1cdcd",
       },
-      "background-front": {
-        dark: "#222222",
+      "background-icon": {
+        dark: "#e0b11c",
         light: "#FFFFFF",
       },
-      "background-contrast": {
-        dark: "#FFFFFF11",
+      "background-student": {  
+        dark: "#2b2a2a",
         light: "#11111111",
       },
       text: {
-        dark: "#EEEEEE",
+        dark: "#b3abab",
         light: "#333333",
       },
       "text-strong": {
@@ -61,6 +73,7 @@ export default {
     font: {
       family: "Helvetica",
     },
+   
     active: {
       background: "active-background",
       color: "active-text",
