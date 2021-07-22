@@ -6,7 +6,7 @@ import NGTTheme from "../styles/theme";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <Grommet theme={NGTTheme} themeMode="dark">
+    <Grommet theme={NGTTheme} themeMode="light">
       <Box height="100vh" width="100vw">
         <Header background="#353B41">
           <img
