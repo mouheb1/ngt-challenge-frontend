@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-width: 500px;
 }
 
 a {
@@ -174,5 +175,8 @@ span {
 
 .border-solid-gray {
   border: 1px solid #d1cdcd;
+}
+.vh-91 {
+  min-height: 91vh!important;
 }
 /* ------------------------------------------ */

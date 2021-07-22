@@ -13,7 +13,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <Grommet theme={NGTTheme} themeMode={mood}>
       <ResponsiveContext.Consumer>
         {(size) => (
-          <Box height="100vh" width="100vw">
+          <Box>
             <Header background="background-card" border="bottom">
               <div className="home-nav">
                 <img

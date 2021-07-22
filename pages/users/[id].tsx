@@ -22,6 +22,7 @@ import {
   CodeSandbox,
   Deploy,
   LinkPrevious,
+  Mail,
 } from "grommet-icons";
 import { CustomBox } from "../../components/CustomBox";
 type Props = {
@@ -66,6 +67,7 @@ const User: NextPage<Props> = ({ student }) => {
   return (
     <React.Fragment>
       <Grid
+        className="vh-91"
         rows={["xsmall", "large"]}
         columns={["xsmall", "auto"]}
         areas={[
@@ -88,16 +90,28 @@ const User: NextPage<Props> = ({ student }) => {
             </div>
             <span>User profile</span>
           </Box>
-          <Button
-            onClick={() => window.open("mailto:mouheb.bzri@gmail.com")}
-            label="Connect To E-mail"
-          />
+          {size === "xsmall" ? (
+            <Box
+              className="border-radius d-flex flex-center"
+              background="background-icon"
+            >
+              <Mail
+                className="orange"
+                onClick={() => window.open("mailto:mouheb.bzri@gmail.com")}
+              />
+            </Box>
+          ) : (
+            <Button
+              onClick={() => window.open("mailto:mouheb.bzri@gmail.com")}
+              label={"Connect To E-mail"}
+            />
+          )}
         </Header>
         <Box
           width="63px"
           gridArea="nav"
           background="background-card"
-          className="center-children pd-t-1 pd-b-1"
+          className="center-children pd-t-1 pd-b-1 vh-91"
         >
           <Box
             className="border-radius d-flex flex-center"
