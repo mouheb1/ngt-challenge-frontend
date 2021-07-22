@@ -9,13 +9,13 @@ export type Student = {
 };
 
 export const fetchStudents = async (): Promise<Student[]> => {
-  const response = await fetch("http://localhost:3000/api/students");
+  const response = await fetch("http://159.65.224.159:3002/api/students");
   const data = await response.json();
   return data;
 };
 
 export const fetchStudent = async (id: string): Promise<Student> => {
-  const response = await fetch(`http://localhost:3000/api/students/${id}`);
+  const response = await fetch(`http://159.65.224.159:3002/api/students/${id}`);
   const data = await response.json();
   return data;
 };
